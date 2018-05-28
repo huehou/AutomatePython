@@ -19,6 +19,9 @@ print("Enter number: ")
 while True:
     try:
         number = int(input())
+        if number <= 0:
+            print("You must enter a positive integer")
+            continue
         break
     except ValueError:
         print("You must enter an integer")
